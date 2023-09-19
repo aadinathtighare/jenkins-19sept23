@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    parameters {
+  string defaultValue: 'hari-tighare', description: 'choose ur name', name: 'name'
+   string defaultValue: 'banglore-city', description: 'choose ur location', name: 'location'
+    }
+    stages{
+        stage("Adinath Demo"){
+            steps{
+                echo "Hi ${name}, welcome to ${location}"
+                
+            }
+        }
+    }
+
+}
